@@ -6,12 +6,11 @@ import "./style.css";
 
 // function magic() {
 window.onload = function() {
-  document.querySelector("#topSuit").innerHTML = magic();
-  document.querySelector("#bottomSuit").innerHTML = magic();
+  const suit = document.querySelector("#topSuit");
+  suit.innerHTML = magic();
+  document.querySelector("#bottomSuit").innerHTML = suit.innerHTML;
   document.querySelector("#luckyNumbers").innerHTML = randomNumbers();
 };
-//   document.getElementById("#passButton").addEventListener("click", magic);
-// }
 
 let randomNumbers = function() {
   let numbers = [
