@@ -1,1 +1,65 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+html {
+  height: 100%;
+}
+body {
+  background: linear-gradient(45deg, red, darkgreen, darkgreen, darkgreen, red);
+}
+
+h1 {
+  color: black;
+  font-weight: 600;
+}
+em {
+  color: gold;
+}
+.card {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  width: 350px;
+  height: 500px;
+  background: white;
+  /* border-radius: 15px; */
+  padding: 10px;
+  border: 10px solid;
+  border-image: repeating-linear-gradient(30deg, black, gold, green) 1;
+}
+
+#topSuit {
+  position: absolute;
+  left: 10px;
+  font-size: 100px;
+}
+
+#bottomSuit {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 100px;
+  rotate: 180deg;
+}
+
+#luckyNumbers {
+  position: absolute;
+  top: 160px;
+  left: 140px;
+  font-size: 100px;
+}
+
+#passButton {
+  border: none;
+  padding: 0 24px;
+  border-radius: 50px;
+  min-width: 200px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #fd0;
+  font-weight: 500;
+  color: #222;
+}
+
+#9830 {
+  color: red;
+}
