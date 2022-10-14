@@ -10112,7 +10112,7 @@ var ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__(/*! -!../node_module
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);
 // Module
-exports.push([module.i, "html {\n  height: 100%;\n}\nbody {\n  background: linear-gradient(45deg, red, darkgreen, darkgreen, darkgreen, red);\n}\n\nh1 {\n  color: black;\n  font-weight: 600;\n}\nem {\n  color: gold;\n}\n.card {\n  display: inline-block;\n  position: relative;\n  margin: auto;\n  width: 350px;\n  height: 500px;\n  background: white;\n  /* border-radius: 15px; */\n  padding: 10px;\n  border: 10px solid;\n  border-image: repeating-linear-gradient(30deg, black, gold, green) 1;\n}\n\n#topSuit {\n  position: absolute;\n  left: 10px;\n  font-size: 100px;\n}\n\n#bottomSuit {\n  position: absolute;\n  bottom: 5px;\n  right: 10px;\n  font-size: 100px;\n  rotate: 180deg;\n}\n\n#luckyNumbers {\n  position: absolute;\n  top: 160px;\n  left: 140px;\n  font-size: 100px;\n}\n\n#passButton {\n  border: none;\n  padding: 0 24px;\n  border-radius: 50px;\n  min-width: 200px;\n  height: 50px;\n  font-size: 18px;\n  background-color: #fd0;\n  font-weight: 500;\n  color: #222;\n}\n", ""]);
+exports.push([module.i, "html {\n  height: 100%;\n}\nbody {\n  background: linear-gradient(45deg, red, darkgreen, darkgreen, darkgreen, red);\n}\n\nh1 {\n  color: black;\n  font-weight: 600;\n}\nem {\n  color: gold;\n}\n.card {\n  border-radius: 25px;\n  display: inline-block;\n  position: relative;\n  margin: auto;\n  width: 350px;\n  height: 500px;\n  background: white;\n  padding: 10px;\n  border: 10px solid;\n  border-image: repeating-linear-gradient(30deg, black, gold, green) 1;\n}\n\n#topSuit {\n  position: absolute;\n  left: 10px;\n  font-size: 100px;\n}\n\n#bottomSuit {\n  position: absolute;\n  bottom: 5px;\n  right: 10px;\n  font-size: 100px;\n  rotate: 180deg;\n}\n\n#luckyNumbers {\n  position: absolute;\n  top: 160px;\n  left: 140px;\n  font-size: 100px;\n}\n\n#passButton {\n  border: none;\n  padding: 0 24px;\n  border-radius: 50px;\n  min-width: 200px;\n  height: 50px;\n  font-size: 18px;\n  background-color: #fd0;\n  font-weight: 500;\n  color: #222;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -19065,9 +19065,7 @@ window.onload = function () {
   suit.innerHTML = magic();
   document.querySelector("#bottomSuit").innerHTML = suit.innerHTML;
   document.querySelector("#luckyNumbers").innerHTML = randomNumbers();
-}; //   document.getElementById("#passButton").addEventListener("click", magic);
-// }
-
+};
 
 var randomNumbers = function randomNumbers() {
   var numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "LOL"];
@@ -19122,8 +19120,8 @@ module.exports = content.locals || {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /workspace/vanillajs-hello/node_modules/error-overlay-webpack-plugin/lib/entry-basic.js */"./node_modules/error-overlay-webpack-plugin/lib/entry-basic.js");
-__webpack_require__(/*! /workspace/vanillajs-hello/node_modules/error-overlay-webpack-plugin/lib/entry-devserver.js */"./node_modules/error-overlay-webpack-plugin/lib/entry-devserver.js");
+__webpack_require__(/*! /workspace/CardGenerator/node_modules/error-overlay-webpack-plugin/lib/entry-basic.js */"./node_modules/error-overlay-webpack-plugin/lib/entry-basic.js");
+__webpack_require__(/*! /workspace/CardGenerator/node_modules/error-overlay-webpack-plugin/lib/entry-devserver.js */"./node_modules/error-overlay-webpack-plugin/lib/entry-devserver.js");
 module.exports = __webpack_require__(/*! ./src/app.js */"./src/app.js");
 
 
