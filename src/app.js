@@ -6,8 +6,8 @@ import "./style.css";
 
 // function magic() {
 window.onload = function() {
-  document.querySelector("#topSuit").innerHTML = magic();
-  document.querySelector("#bottomSuit").innerHTML = magic();
+  document.querySelector(".topSuit").innerHTML = magic(); // change #topSuit for .topSuit
+//   document.querySelector("#bottomSuit").innerHTML = magic(); // remove this
   document.querySelector("#luckyNumbers").innerHTML = randomNumbers();
 };
 //   document.getElementById("#passButton").addEventListener("click", magic);
