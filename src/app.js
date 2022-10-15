@@ -34,9 +34,9 @@ let randomNumbers = function() {
 };
 
 let randomSuit = function() {
-  // let suit = ["♥", "♦", "♠", "♣"];
+  let suit = ["♥", "♦", "♠", "♣"];
   // these are in order displayed below
-  let suit = ["&#10084;&#65039;", "&#128310;", "&#9824;", "&#9827"];
+  // let suit = ["&#10084;&#65039;", "&#128310;", "&#9824;", "&#9827"];
   // check
   let theseSuit = Math.floor(Math.random() * suit.length);
   return suit[theseSuit];
