@@ -4,15 +4,16 @@ import "./style.css";
 
 //write your code here
 
-  window.onload = function() {
-    const suit = document.querySelector("#topSuit");
-       suit.innerHTML = magic();
-           document.querySelector("#bottomSuit").innerHTML = suit.innerHTML;
-              document.querySelector("#luckyNumbers").innerHTML = randomNumbers();
-                 if (suit.innerHTML == "♥" || suit.innerHTML == "♦") {
-           return (suit.style.color = "red");
-        }
-     };
+  const topSuit = document.querySelector("#topSuit");
+  const bottomSuit = document.querySelector("#bottomSuit");
+  topSuit.innerHTML = magic();
+  bottomSuit.innerHTML = topSuit.innerHTML;
+  document.querySelector("#luckyNumbers").innerHTML = randomNumbers();
+  if (topSuit.innerHTML == "♥" || topSuit.innerHTML == "♦") {
+    topSuit.style.color = "red";
+    bottomSuit.style.color = "red";
+  }
+};
 
 
 let randomNumbers = function() {
