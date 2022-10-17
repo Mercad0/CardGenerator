@@ -4,7 +4,6 @@ import "./style.css";
 
 //write your code here
 
-// function magic() {
   window.onload = function() {
     const suit = document.querySelector("#topSuit");
        suit.innerHTML = magic();
