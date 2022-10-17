@@ -10112,7 +10112,7 @@ var ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__(/*! -!../node_module
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);
 // Module
-exports.push([module.i, "html {\n  height: 100%;\n}\nbody {\n  background: linear-gradient(45deg, red, darkgreen, darkgreen, darkgreen, red);\n}\n\nh1 {\n  color: black;\n  font-weight: 600;\n}\nem {\n  color: gold;\n}\n.card {\n  border-radius: 25px;\n  display: inline-block;\n  position: relative;\n  margin: auto;\n  width: 350px;\n  height: 500px;\n  background: white;\n  padding: 10px;\n  border: 10px solid;\n  border-image: linear-gradient(30deg, black, gold, green) 1;\n}\n\n#topSuit {\n  position: absolute;\n  left: 10px;\n  font-size: 100px;\n}\n\n#bottomSuit {\n  position: absolute;\n  bottom: 5px;\n  right: 10px;\n  font-size: 100px;\n  rotate: 180deg;\n}\n\n#luckyNumbers {\n  position: absolute;\n  top: 160px;\n  left: 140px;\n  font-size: 100px;\n}\n\n#passButton {\n  border: none;\n  padding: 0 24px;\n  border-radius: 50px;\n  min-width: 200px;\n  height: 50px;\n  font-size: 18px;\n  background-color: #fd0;\n  font-weight: 500;\n  color: #222;\n}\n", ""]);
+exports.push([module.i, "html {\n  height: 100%;\n}\nbody {\n  background: linear-gradient(45deg, red, darkgreen, darkgreen, darkgreen, red);\n}\n\nh1 {\n  color: black;\n  font-weight: 600;\n}\nem {\n  color: gold;\n}\n.card {\n  border-radius: 25px;\n  display: inline-block;\n  position: relative;\n  margin: auto;\n  width: 350px;\n  height: 500px;\n  background: white;\n  padding: 10px;\n  border: 10px solid;\n  border-image: linear-gradient(30deg, black, gold, green) 1;\n}\n\n#topSuit {\n  position: absolute;\n  left: 10px;\n  font-size: 100px;\n}\n\n#bottomSuit {\n  position: absolute;\n  bottom: 5px;\n  right: 10px;\n  font-size: 100px;\n  rotate: 180deg;\n}\n\n#luckyNumbers {\n  position: absolute;\n  top: 160px;\n  left: 140px;\n  font-size: 100px;\n}\n\n#passButton {\n  border: none;\n  padding: 0 24px;\n  border-radius: 50px;\n  min-width: 200px;\n  height: 50px;\n  font-size: 18px;\n  background-color: #fd0;\n  font-weight: 500;\n  color: #222;\n}\n\n#bottomSuithearts {\n  color: red;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -19052,19 +19052,27 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _popperjs_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @popperjs/core */ "./node_modules/@popperjs/core/lib/index.js");
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_2__);
 /* eslint-disable */
+
 
  //write your code here
 // function magic() {
 
 window.onload = function () {
-  var suit = document.querySelector("#topSuit");
-  suit.innerHTML = magic();
-  document.querySelector("#bottomSuit").innerHTML = suit.innerHTML;
+  var topSuit = document.querySelector("#topSuit");
+  var bottomSuit = document.querySelector("#bottomSuit");
+  topSuit.innerHTML = magic();
+  bottomSuit.innerHTML = topSuit.innerHTML;
   document.querySelector("#luckyNumbers").innerHTML = randomNumbers();
+
+  if (topSuit.innerHTML == "♥" || topSuit.innerHTML == "♦") {
+    topSuit.style.color = "red";
+    bottomSuit.style.color = "red";
+  }
 };
 
 var randomNumbers = function randomNumbers() {
@@ -19074,14 +19082,16 @@ var randomNumbers = function randomNumbers() {
 };
 
 var randomSuit = function randomSuit() {
-  // let suit = ["♥", "♦", "♠", "♣"];
-  // these are in order displayed below
-  var suit = ["&#10084;&#65039;", "&#128310;", "&#9824;", "&#9827"];
+  var suit = ["♥", "♦", "♠", "♣"]; // these are in order displayed below
+  // let suit = ["&#10084;&#65039;", "&#128310;", "&#9824;", "&#9827"];
+  // check
+
   var theseSuit = Math.floor(Math.random() * suit.length);
   return suit[theseSuit];
 };
 
-var magic = randomSuit; // document.getElementById("passButton").addEventListener("click", clicked);
+var magic = randomSuit; // let hearts = ["♥"];
+// document.getElementById("passButton").addEventListener("click", clicked);
 
 /***/ }),
 
