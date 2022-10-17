@@ -5,12 +5,16 @@ import "./style.css";
 //write your code here
 
 // function magic() {
-window.onload = function() {
-  const suit = document.querySelector("#topSuit");
-  suit.innerHTML = magic();
-  document.querySelector("#bottomSuit").innerHTML = suit.innerHTML;
-  document.querySelector("#luckyNumbers").innerHTML = randomNumbers();
-};
+  window.onload = function() {
+    const suit = document.querySelector("#topSuit");
+       suit.innerHTML = magic();
+           document.querySelector("#bottomSuit").innerHTML = suit.innerHTML;
+              document.querySelector("#luckyNumbers").innerHTML = randomNumbers();
+                 if (suit.innerHTML == "♥" || suit.innerHTML == "♦") {
+           return (suit.style.color = "red");
+        }
+     };
+
 
 let randomNumbers = function() {
   let numbers = [
